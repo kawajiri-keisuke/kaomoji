@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="css/styles.css">
+	<title>顔文字占い</title>
+  <script>
+		var face = ['ヽ(*ﾟ∀ﾟ*)ﾉ','ヽ(ﾟ∀ﾟ)ﾉ','(ｏﾟ∀ﾟｏ)','((´∀｀))','(´ω`；)','(((；ﾟдﾟ；)))','<(.;ﾟ;:Д:;ﾟ;.)>','｡ﾟ・(PД｀q )・ﾟ｡','ε=ε=ε= ┌(；´ﾟｪﾟ)┘','＿ﾉ乙(､ﾝ､)_','〓■●'];
+    var point =['100点','90点','80点','70点','60点','50点','40点','30点','20点','10点','0点'];
+
+    function start(){
+      var num = Math.round(Math.random() * 10),
+      d_face = face[num],
+      d_point = point[num];
+
+      var newface = document.createTextNode(d_face),
+      newpoint = document.createTextNode(d_point),
+      p1 = document.getElementById("p1");
+
+      if (p1.hasChildNodes()){
+        while(p1.childNodes.length > 0){
+          p1.removeChild(p1.lastChild);
+        }
+      }
+      p1.appendChild(newface);
+      p1.appendChild(newpoint);
+    }
+  </script>
+</head>
+<body>
+  <header>
+    顔文字占い
+  </header>
+  <p>ボタン押してみ！</p>
+  <button type=button onclick="start();">占</button>
+
+  <p id="p1"></p>
+</body>
+</html>

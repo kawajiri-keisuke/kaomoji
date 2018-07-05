@@ -1,0 +1,50 @@
+/* <style>
+@import url('https://fonts.googleapis.com/css?family=Gaegu');
+</style> */
+
+header {
+  background-color: lime;
+  font-size: 36px;
+  color: white;
+  text-align: left;
+}
+
+body {
+  background-color: gray;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+
+p#p1 {
+  font-family: 'Gaegu', cursive;
+  background-color: white;
+  text-align: center;
+  width: 650px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+button{
+  margin: auto;
+  display: block;
+  text-decoration: none;
+  height:60px;
+  width: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background: lime;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+button:hover{
+  background: limegreen;
+}
